@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usman Website</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: lightblue;
+        }
+
+        nav {
+            background-color: darkblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .content {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            color: darkblue;
+            font-size: 45px;
+        }
+
+        .content p {
+            font-size: 20px;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .about {
+            background-color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .about h2,
+        .services h2,
+        .contact h2 {
+            font-size: 38px;
+            color: darkblue;
+        }
+
+        .about p {
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .services {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background-color: white;
+            width: 250px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .box h3 {
+            color: darkblue;
+            font-size: 24px;
+        }
+
+        .box p {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .contact {
+            background-color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 80%;
+            max-width: 500px;
+            padding: 12px;
+            margin: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contact textarea {
+            height: 120px;
+        }@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .content {
+        padding: 60px 15px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 85%;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>Hello! My name is Usman.</p>
+        <button>Contact Me</button>
+    </div>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! My name is Usman.
+            I am learning website development.
+            I love creating beautiful websites
+            and learning new skills.
+        </p>
+    </section>
+
+    <section class="services" id="services">
+
+        <h2>My Services</h2>
+
+        <div class="boxes">
+
+            <div class="box">
+                <h3>Website Design</h3>
+                <p>
+                    I can create simple and beautiful websites
+                    for personal and small business use.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Graphic Design</h3>
+                <p>
+                    I can create posters, banners and
+                    YouTube thumbnails.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>AI Images</h3>
+                <p>
+                    I can create creative images using
+                    modern AI tools.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>You can send me a message below.</p>
+
+        <input type="text" placeholder="Your Name">
+        <br>
+
+        <input type="email" placeholder="Your Email">
+        <br>
+
+        <textarea placeholder="Your Message"></textarea>
+        <br>
+
+        <button>Send Message</button>
+
+    </section>
+
+</body>
+</html>
