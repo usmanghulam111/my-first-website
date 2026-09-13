@@ -70,6 +70,13 @@
             max-width: 800px;
         }
 
+        .welcome {
+            color: #ffd43b;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
         .hero h1 {
             font-size: 60px;
             margin-bottom: 20px;
@@ -82,7 +89,13 @@
         .hero p {
             font-size: 21px;
             line-height: 1.7;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            font-size: 18px !important;
+            max-width: 650px;
+            margin: 20px auto 30px;
         }
 
         .btn {
@@ -95,10 +108,15 @@
             font-size: 18px;
             font-weight: bold;
             transition: 0.3s;
+            margin: 5px;
         }
 
         .btn:hover {
             transform: translateY(-4px);
+            background: white;
+        }
+
+        .btn-white {
             background: white;
         }
 
@@ -223,6 +241,7 @@
 
         footer p {
             margin: 5px;
+            color: white;
         }
 
         /* MOBILE */
@@ -257,6 +276,12 @@
             .box {
                 width: 90%;
             }
+
+            .btn {
+                display: block;
+                width: fit-content;
+                margin: 10px auto;
+            }
         }
 
     </style>
@@ -276,74 +301,40 @@
     </nav>
 
 
-    <!-- HERO SECTION --><section class="hero" id="home">
+    <!-- HERO SECTION -->
 
-    <div class="hero-content">
+    <section class="hero" id="home">
 
-        <p style="color:#ffd43b; font-size:18px; font-weight:bold;">
-            👋 WELCOME TO MY PORTFOLIO
-        </p>
+        <div class="hero-content">
 
-        <h1>
-            Hello, I'm <span>Usman</span>
-        </h1>
+            <div class="welcome">
+                👋 WELCOME TO MY PORTFOLIO
+            </div>
 
-        <p>
-            Web Development Learner • Creative Designer • AI Enthusiast
-        </p>
+            <h1>
+                Hello, I'm <span>Usman</span>
+            </h1>
 
-        <p style="font-size:18px; max-width:650px; margin:20px auto 30px;">
-            I create modern, beautiful and responsive websites
-            while learning new skills every day.
-        </p>
+            <p>
+                Web Development Learner • Creative Designer • AI Enthusiast
+            </p>
 
-        <a href="#services" class="btn">
-            Explore My Services
-        </a>
+            <p class="hero-description">
+                I create modern, beautiful and responsive websites
+                while learning new skills every day.
+            </p>
 
-        <a href="#contact"
-           class="btn"
-           style="margin-left:12px; background:white;">
-            Contact Me
-        </a>
+            <a href="#services" class="btn">
+                Explore My Services
+            </a>
 
-    </div>
+            <a href="#contact" class="btn btn-white">
+                Contact Me
+            </a>
 
-</section>
-<section class="hero" id="home">
+        </div>
 
-    <div class="hero-content">
-
-        <p style="color:#ffd43b; font-size:18px; font-weight:bold;">
-            👋 WELCOME TO MY PORTFOLIO
-        </p>
-
-        <h1>
-            Hello, I'm <span>Usman</span>
-        </h1>
-
-        <p>
-            Web Development Learner • Creative Designer • AI Enthusiast
-        </p>
-
-        <p style="font-size:18px; max-width:650px; margin:20px auto 30px;">
-            I create modern, beautiful and responsive websites
-            while learning new skills every day.
-        </p>
-
-        <a href="#services" class="btn">
-            Explore My Services
-        </a>
-
-        <a href="#contact"
-           class="btn"
-           style="margin-left:12px; background:white;">
-            Contact Me
-        </a>
-
-    </div>
-
-</section>
+    </section>
 
 
     <!-- ABOUT SECTION -->
@@ -375,7 +366,6 @@
         </h2>
 
         <div class="boxes">
-
 
             <div class="box">
 
@@ -423,7 +413,6 @@
                 </p>
 
             </div>
-
 
         </div>
 
