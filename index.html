@@ -109,6 +109,8 @@
             font-weight: bold;
             transition: 0.3s;
             margin: 5px;
+            border: none;
+            cursor: pointer;
         }
 
         .btn:hover {
@@ -433,28 +435,43 @@
         </p>
 
         <div class="contact-box">
+
             <p>
                 📧 Email: usmanghulam102@gmail.com
             </p>
-            <input
-                type="text"
-                placeholder="Your Name"
+
+            <form
+                action="https://formspree.io/f/mzezbokv"
+                method="POST"
             >
 
-            <input
-                type="email"
-                placeholder="Your Email"
-            >
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                >
 
-            <textarea
-                placeholder="Your Message"
-            ></textarea>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                >
 
-            <br><br>
+                <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
 
-            <a href="#home" class="btn">
-                Send Message
-            </a>
+                <br><br>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
 
         </div>
 
