@@ -147,40 +147,6 @@
         /* SERVICES */
 
         .services {
-            <!-- Projects Section -->
-<section class="projects" id="projects">
-
-    <h2 class="section-title">
-        My Projects
-    </h2>
-
-    <p>
-        Here are some of the projects I have created while learning web development.
-    </p>
-
-    <div class="projects-container">
-
-        <div class="project-card">
-
-            <h3>My First Website</h3>
-
-            <p>
-                A professional portfolio website created using HTML and CSS.
-            </p>
-
-            <a
-                href="https://usmanghulam111.github.io/my-first-website/"
-                target="_blank"
-                class="btn"
-            >
-                View Project
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
             padding: 90px 20px;
             text-align: center;
             background: #f5f7ff;
@@ -226,12 +192,55 @@
             line-height: 1.6;
         }
 
+        /* PROJECTS */
+
+        .projects {
+            padding: 90px 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: #f5f7ff;
+            color: #333;
+            width: 320px;
+            padding: 35px 25px;
+            border-radius: 18px;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+        }
+
+        .project-card h3 {
+            color: #0b5ed7;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
         /* CONTACT */
 
         .contact {
             padding: 90px 20px;
             text-align: center;
-            background: white;
+            background: #f5f7ff;
         }
 
         .contact p {
@@ -313,6 +322,10 @@
                 width: 90%;
             }
 
+            .project-card {
+                width: 90%;
+            }
+
             .btn {
                 display: block;
                 width: fit-content;
@@ -332,6 +345,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
 
     </nav>
@@ -455,6 +469,46 @@
     </section>
 
 
+    <!-- PROJECTS SECTION -->
+
+    <section class="projects" id="projects">
+
+        <h2 class="section-title">
+            My Projects
+        </h2>
+
+        <p>
+            Here is a project I created while learning web development.
+        </p>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <h3>
+                    My First Website
+                </h3>
+
+                <p>
+                    A professional portfolio website created
+                    using HTML and CSS.
+                </p>
+
+                <a
+                    href="https://usmanghulam111.github.io/my-first-website/"
+                    target="_blank"
+                    class="btn"
+                >
+                    View Project
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
     <!-- CONTACT SECTION -->
 
     <section class="contact" id="contact">
@@ -472,9 +526,16 @@
 
             <p>
                 📧 Email: usmanghulam102@gmail.com
-                <p>
-    💻 GitHub: <a href="https://github.com/usmanghulam111" target="_blank">My GitHub</a>
-</p>
+            </p>
+
+            <p>
+                💻 GitHub:
+                <a
+                    href="https://github.com/usmanghulam111"
+                    target="_blank"
+                >
+                    My GitHub
+                </a>
             </p>
 
             <form
