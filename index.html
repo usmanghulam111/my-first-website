@@ -1,15 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Usman | Web Designer</title>
 
 <style>
-
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -17,17 +14,15 @@
     scroll-behavior: smooth;
 }
 
-/* BODY */
 body {
     font-family: Arial, sans-serif;
     background: #f5f7ff;
     color: #222;
 }
 
-/* NAVBAR */
 nav {
     background: linear-gradient(90deg, #071952, #0b5ed7);
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
     position: sticky;
     top: 0;
@@ -37,19 +32,17 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 18px;
-    font-size: 17px;
+    margin: 0 12px;
+    font-size: 16px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 nav a:hover {
     color: #ffd43b;
 }
 
-/* HERO */
 .hero {
-    min-height: 90vh;
+    min-height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +64,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 60px;
+    font-size: 58px;
     margin-bottom: 20px;
 }
 
@@ -80,35 +73,28 @@ nav a:hover {
 }
 
 .hero p {
-    font-size: 21px;
+    font-size: 19px;
     line-height: 1.7;
     margin-bottom: 20px;
 }
 
-.hero-description {
-    font-size: 18px !important;
-    max-width: 650px;
-    margin: 20px auto 30px;
-}
-
-/* BUTTONS */
 .btn {
     display: inline-block;
     background: #ffd43b;
     color: #111;
-    padding: 15px 30px;
+    padding: 14px 24px;
     border-radius: 30px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    transition: 0.3s;
-    margin: 5px;
+    margin: 6px;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
     background: white;
 }
 
@@ -116,17 +102,19 @@ nav a:hover {
     background: white;
 }
 
-/* ABOUT */
-.about {
-    padding: 90px 20px;
-    text-align: center;
-    background: white;
-}
-
 .section-title {
-    font-size: 40px;
+    font-size: 38px;
     color: #071952;
     margin-bottom: 25px;
+}
+
+.about, .skills, .services, .projects, .contact {
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.about, .projects {
+    background: white;
 }
 
 .about p {
@@ -137,184 +125,122 @@ nav a:hover {
     color: #555;
 }
 
-/* SKILLS */
-.skills {
-    padding: 90px 20px;
-    text-align: center;
-    background: #f5f7ff;
-}
-
-/* SERVICES */
-.services {
-    padding: 90px 20px;
-    text-align: center;
-    background: white;
-}
-
-.boxes {
+.boxes, .projects-container {
     display: flex;
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
-.box {
+.box, .project-card {
     background: white;
-    width: 280px;
-    padding: 35px 25px;
+    width: 290px;
+    padding: 30px 24px;
     border-radius: 18px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.10);
     transition: 0.3s;
 }
 
-.box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+.box:hover, .project-card:hover {
+    transform: translateY(-7px);
 }
 
 .icon {
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-size: 42px;
+    margin-bottom: 18px;
 }
 
-.box h3 {
+.box h3, .project-card h3 {
     color: #0b5ed7;
     font-size: 23px;
     margin-bottom: 15px;
 }
 
-.box p {
+.box p, .project-card p {
     color: #555;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-/* PROJECTS */
-.projects {
-    padding: 90px 20px;
-    text-align: center;
-    background: white;
-}
-
-.projects > p {
+.projects > p, .contact > p {
     color: #555;
-    font-size: 18px;
-}
-
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin-top: 40px;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 .project-card {
     background: #f5f7ff;
-    color: #333;
-    width: 320px;
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
 }
 
 .project-card img {
     width: 100%;
-    height: 180px;
+    height: 175px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 20px;
 }
 
 .project-icon {
-    font-size: 70px;
+    font-size: 65px;
     margin-bottom: 20px;
 }
 
-.project-card h3 {
-    color: #0b5ed7;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.project-card p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-/* CONTACT */
 .contact {
-    padding: 90px 20px;
-    text-align: center;
     background: #f5f7ff;
-}
-
-.contact p {
-    color: #555;
-    font-size: 18px;
-    margin-bottom: 30px;
 }
 
 .contact-box {
     max-width: 600px;
-    margin: auto;
+    margin: 25px auto 0;
 }
 
-.contact input,
-.contact textarea {
+.contact-box p {
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.contact-box input,
+.contact-box textarea {
     width: 100%;
-    padding: 15px;
+    padding: 14px;
     margin: 8px 0;
     border: 1px solid #ddd;
     border-radius: 10px;
     font-size: 16px;
-    outline: none;
+    font-family: Arial, sans-serif;
 }
 
-.contact textarea {
-    height: 140px;
-    resize: none;
+.contact-box textarea {
+    height: 130px;
+    resize: vertical;
 }
 
-.contact input:focus,
-.contact textarea:focus {
-    border-color: #0b5ed7;
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
 }
 
-/* FOOTER */
+.whatsapp-btn:hover {
+    background: #128C7E;
+}
+
 footer {
     background: #071952;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 25px 15px;
+    line-height: 1.8;
 }
 
-footer p {
-    margin: 5px;
-    color: white;
-}
-
-/* MOBILE */
 @media (max-width: 600px) {
-
     nav {
-        padding: 15px 5px;
+        padding: 14px 5px;
+        line-height: 2;
     }
 
     nav a {
-        margin: 5px;
+        margin: 4px 6px;
         font-size: 14px;
-    }
-
-    .hero {
-        min-height: 80vh;
     }
 
     .hero h1 {
@@ -329,406 +255,132 @@ footer p {
         font-size: 32px;
     }
 
-    .box {
-        width: 90%;
-    }
-
-    .project-card {
-        width: 90%;
+    .box, .project-card {
+        width: 100%;
+        max-width: 350px;
     }
 
     .btn {
-        display: block;
-        width: fit-content;
-        margin: 10px auto;
+        margin: 8px auto;
     }
-
 }
-
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-
 <nav>
-
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-
-<!-- HERO -->
-
 <section class="hero" id="home">
-
-<div class="hero-content">
-
-<div class="welcome">
-👋 WELCOME TO MY PORTFOLIO
-</div>
-
-<h1>
-Hello, I'm <span>Usman</span>
-</h1>
-
-<p>
-Web Development Learner • Creative Designer • AI Enthusiast
-</p>
-
-<p class="hero-description">
-I create modern, beautiful and responsive websites while learning new skills every day.
-</p>
-
-<a href="#services" class="btn">
-Explore My Services
-</a>
-
-<a href="#contact" class="btn btn-white">
-Contact Me
-</a>
-
-</div>
-
+    <div class="hero-content">
+        <div class="welcome">👋 WELCOME TO MY PORTFOLIO</div>
+        <h1>Hello, I'm <span>Usman</span></h1>
+        <p>Web Development Learner • Creative Designer • AI Enthusiast</p>
+        <p>I create modern, beautiful and responsive websites while learning new skills every day.</p>
+        <a href="#services" class="btn">Explore My Services</a>
+        <a href="#contact" class="btn btn-white">Contact Me</a>
+    </div>
 </section>
-
-
-<!-- ABOUT -->
 
 <section class="about" id="about">
-
-<h2 class="section-title">
-About Me
-</h2>
-
-<p>
-Hello! My name is Usman. I am learning website development
-and improving my skills every day. I love creating beautiful
-websites, learning new technology and exploring creative ideas.
-</p>
-
+    <h2 class="section-title">About Me</h2>
+    <p>Hello! My name is Usman. I am learning website development and improving my skills every day. I love creating beautiful websites, learning new technology and exploring creative ideas.</p>
 </section>
-
-
-<!-- SKILLS -->
 
 <section class="skills" id="skills">
-
-<h2 class="section-title">
-My Skills
-</h2>
-
-<div class="boxes">
-
-<div class="box">
-
-<div class="icon">
-💻
-</div>
-
-<h3>
-HTML & CSS
-</h3>
-
-<p>
-I can create clean and responsive websites using HTML and CSS.
-</p>
-
-</div>
-
-
-<div class="box">
-
-<div class="icon">
-🎨
-</div>
-
-<h3>
-Graphic Design
-</h3>
-
-<p>
-I can create posters, banners, thumbnails and social media designs.
-</p>
-
-</div>
-
-
-<div class="box">
-
-<div class="icon">
-🤖
-</div>
-
-<h3>
-AI Tools
-</h3>
-
-<p>
-I am learning creative AI tools for images and digital projects.
-</p>
-
-</div>
-
-</div>
-
+    <h2 class="section-title">My Skills</h2>
+    <div class="boxes">
+        <div class="box">
+            <div class="icon">💻</div>
+            <h3>HTML &amp; CSS</h3>
+            <p>I am learning to create clean and responsive websites using HTML and CSS.</p>
+        </div>
+        <div class="box">
+            <div class="icon">🎨</div>
+            <h3>Graphic Design</h3>
+            <p>I can create posters, banners, thumbnails and social media designs.</p>
+        </div>
+        <div class="box">
+            <div class="icon">🤖</div>
+            <h3>AI Tools</h3>
+            <p>I am learning creative AI tools for images and digital projects.</p>
+        </div>
+    </div>
 </section>
-
-
-<!-- SERVICES -->
 
 <section class="services" id="services">
-
-<h2 class="section-title">
-My Services
-</h2>
-
-<div class="boxes">
-
-<div class="box">
-
-<div class="icon">
-💻
-</div>
-
-<h3>
-Website Design
-</h3>
-
-<p>
-I create modern, responsive and professional websites
-for personal brands and small businesses.
-</p>
-
-</div>
-
-
-<div class="box">
-
-<div class="icon">
-🎨
-</div>
-
-<h3>
-Graphic Design
-</h3>
-
-<p>
-I create clean and attractive posters, banners,
-thumbnails and social media designs.
-</p>
-
-</div>
-
-
-<div class="box">
-
-<div class="icon">
-🤖
-</div>
-
-<h3>
-AI Image Design
-</h3>
-
-<p>
-I create creative and eye-catching AI images
-for websites, social media and digital projects.
-</p>
-
-</div>
-
-</div>
-
+    <h2 class="section-title">My Services</h2>
+    <div class="boxes">
+        <div class="box">
+            <div class="icon">💻</div>
+            <h3>Website Design</h3>
+            <p>I create modern, responsive websites for personal brands and small businesses.</p>
+        </div>
+        <div class="box">
+            <div class="icon">🎨</div>
+            <h3>Graphic Design</h3>
+            <p>I create posters, banners, thumbnails and social media designs.</p>
+        </div>
+        <div class="box">
+            <div class="icon">🤖</div>
+            <h3>AI Image Design</h3>
+            <p>I create creative AI images for websites, social media and digital projects.</p>
+        </div>
+    </div>
 </section>
-
-
-<!-- PROJECTS -->
 
 <section class="projects" id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <p>Here are some projects I created while learning web development.</p>
 
-<h2 class="section-title">
-My Projects
-</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="./website.png.png" alt="My First Website">
+            <h3>My First Website</h3>
+            <p>A portfolio website created using HTML and CSS.</p>
+            <a href="https://usmanghulam111.github.io/my-first-website/" target="_blank" rel="noopener" class="btn">🌐 Live Demo</a>
+            <a href="https://github.com/usmanghulam111/my-first-website" target="_blank" rel="noopener" class="btn btn-white">💻 GitHub Code</a>
+        </div>
 
-<p>
-Here are some projects I created while learning web development.
-</p>
-
-
-<div class="projects-container">
-
-
-<!-- PROJECT 1 -->
-
-<div class="project-card">
-
-<img
-src="./website.png.png"
-alt="My First Website"
->
-
-<h3>
-My First Website
-</h3>
-
-<p>
-A professional portfolio website created using HTML and CSS.
-</p>
-
-<a
-href="https://usmanghulam111.github.io/my-first-website/"
-target="_blank"
-class="btn"
->
-🌐 Live Demo
-</a>
-
-<a
-href="https://github.com/usmanghulam111/my-first-website"
-target="_blank"
-class="btn btn-white"
->
-💻 GitHub Code
-</a>
-
-</div>
-
-
-<!-- PROJECT 2 -->
-
-<div class="project-card">
-
-<div class="project-icon">
-🌐
-</div>
-
-<h3>
-Business Website
-</h3>
-
-<p>
-A modern and responsive business website created using
-HTML and CSS.
-</p>
-
-<a
-href="./business.html"
-class="btn"
->
-🌐 View Project
-</a>
-
-</div>
-
-
-</div>
-
+        <div class="project-card">
+            <div class="project-icon">🌐</div>
+            <h3>Business Website</h3>
+            <p>A modern and responsive business website created using HTML and CSS.</p>
+            <a href="./business.html" class="btn">🌐 View Project</a>
+        </div>
+    </div>
 </section>
-
-
-<!-- CONTACT -->
 
 <section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Have a question or project? Send me a message.</p>
 
-<h2 class="section-title">
-Contact Me
-</h2>
+    <div class="contact-box">
+        <p>📧 Email: <a href="mailto:usmanghulam102@gmail.com">usmanghulam102@gmail.com</a></p>
+        <p>💻 GitHub: <a href="https://github.com/usmanghulam111" target="_blank" rel="noopener">My GitHub</a></p>
 
-<p>
-Have a question or project? Send me a message.
-</p>
+        <a href="https://wa.me/923215637725" target="_blank" rel="noopener" class="btn whatsapp-btn">💬 Contact Me on WhatsApp</a>
 
-
-<div class="contact-box">
-
-<a
-href="https://wa.me/923215637725"
-target="_blank"
-class="btn"
->
-💬 Contact Me on WhatsApp
-</a>
-<p>
-📧 Email: usmanghulam102@gmail.com
-</p>
-
-<p>
-💻 GitHub:
-
-<a
-href="https://github.com/usmanghulam111"
-target="_blank"
->
-My GitHub
-</a>
-
-</p>
-
-
-<form
-action="https://formspree.io/f/mzezbokv"
-method="POST"
->
-
-<input
-type="text"
-name="name"
-placeholder="Your Name"
-required
->
-
-<input
-type="email"
-name="email"
-placeholder="Your Email"
-required
->
-
-<textarea
-name="message"
-placeholder="Your Message"
-required
-></textarea>
-
-<br>
-<br>
-
-<button
-type="submit"
-class="btn"
->
-Send Message
-</button>
-
-</form>
-
-</div>
-
+        <form action="https://formspree.io/f/mzezbokv" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
 </section>
 
-
-<!-- FOOTER -->
-
 <footer>
-
-<p>
-© 2026 Usman. All Rights Reserved.
-</p>
-
-<p>
-Made with ❤️ while learning Web Development.
-</p>
-
+    <p>© 2026 Usman. All Rights Reserved.</p>
+    <p>Made with ❤️ while learning Web Development.</p>
 </footer>
-
 
 </body>
 </html>
